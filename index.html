@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Bike Demo Final</title>
+  <script src="https://use.typekit.net/xzq6giw.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<meta name="viewport" content="width=device-width, user-scalable=no"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="phone state-1">
+  <div class="title">Create Your Bike</div>
+
+  <span id="final-confirm" class="button hide">Final Confirm</span>
+
+  <div class="bike">
+    
+    <div class="thank-you">
+      <h2>Awesome!</h2>
+      <p>Your bike has been appended</p>
+    </div>
+    
+    <span id="name-confirm" class="button">Name Confirm</span>
+    <div class="bike-container">
+
+      <div class="name-option">
+        <input type="text" id="name" class="name" name="yourName" placeholder="First name" autofocus />
+      </div>
+
+      <svg id="bikeTemplate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 284" xmlns:xlink="http://www.w3.org/1999/xlink">
+      
+  <defs>
+    <radialGradient id="radialGradient-1" r="67.876%" fx="50%" fy="50%">
+      <stop stop-color="#FFF" offset="0%"/>
+      <stop stop-color="#EFFFFF" offset="100%"/>
+    </radialGradient>
+    <circle id="path-2" cx="96" cy="96" r="92.16"/>
+    <mask id="mask-3" width="184.32" height="184.32" x="0" y="0" fill="#fff">
+      <use xlink:href="#path-2"/>
+    </mask>
+    <circle id="path-4" cx="96" cy="96" r="92.16"/>
+    <mask id="mask-5" width="184.32" height="184.32" x="0" y="0" fill="#fff">
+      <use xlink:href="#path-4"/>
+    </mask>
+    <linearGradient id="linearGradient-6" x1="132.699%" x2="0%" y1="-41.184%" y2="100%">
+      <stop stop-color="#FFF" offset="0%"/>
+      <stop stop-color="#EFFFFF" offset="100%"/>
+    </linearGradient>
+    <path id="path-7" d="M84.86 45.762h162.28l-72.6 138.715H12.26z"/>
+    <filter id="filter-8" width="123.8%" height="140.4%" x="-11.9%" y="-14.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feMorphology radius="17.082" in="SourceAlpha" result="shadowInner"/>
+      <feOffset dy="8" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path id="path-9" d="M227.212 186.45L318.718 8.597h-50.423s-17.48-1.215-17.985 18.066c0 0-1.382 17.436 17.564 17.644"/>
+    <filter id="filter-10" width="179.9%" height="141.1%" x="-39.9%" y="-16%" filterUnits="objectBoundingBox">
+      <feMorphology radius="8.541" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+      <feOffset dy="8" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology radius="8.541" in="SourceAlpha" result="shadowInner"/>
+      <feOffset dy="8" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+    <ellipse id="path-11" cx="161.018" cy="176.611" rx="30.606" ry="30.746"/>
+    <ellipse id="path-12" cx="20.088" cy="179.472" rx="19.218" ry="19.306"/>
+    <ellipse id="path-13" cx="311.912" cy="179.472" rx="19.218" ry="19.306"/>
+    <linearGradient id="linearGradient-14" x1="1.828%" x2="113.052%" y1="55.757%" y2="55.757%">
+      <stop stop-color="#EFFFFF" offset="0%"/>
+      <stop stop-color="#FFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" fill="none" fill-rule="evenodd">
+    <g id="bike">
+      <g id="front-wheel" transform="translate(0.000000, 8.000000) translate(292.000000, 84.000000)">
+        <circle id="Oval" class="front-wheel" cx="96" cy="96" r="92.16" fill="url(#radialGradient-1)"/>
+        <use id="Oval" class="front-wheel" stroke="#111313" stroke-width="160" mask="url(#mask-3)" stroke-dasharray="16 8 16 8" xlink:href="#path-2"/>
+        <circle id="Oval" class="front-wheel" cx="96" cy="96" r="87.459" stroke="#FFF" stroke-width="17.082"/>
+      </g>
+      <g id="back-wheel" transform="translate(0.000000, 8.000000) translate(0.807059, 84.000000)">
+        <circle id="Oval" class="back-wheel" cx="96" cy="96" r="92.16" fill="url(#radialGradient-1)"/>
+        <use id="Oval" class="back-wheel" stroke="#111313" stroke-width="160" mask="url(#mask-5)" stroke-dasharray="16 8 16 8" xlink:href="#path-4"/>
+        <circle id="Oval" class="back-wheel" cx="96" cy="96" r="87.459" stroke="#FFF" stroke-width="17.082"/>
+      </g>
+      <g id="bike-frame" transform="translate(0.000000, 8.000000) translate(76.000000, 0.000000)">
+        <g id="Rectangle-4">
+          <use fill="#000" filter="url(#filter-8)" xlink:href="#path-7"/>
+          <path stroke="url(#linearGradient-6)" stroke-width="17.082" d="M90.03 54.303h143l-63.66 121.633h-143L90.03 54.303z"/>
+        </g>
+        <g id="Path-3" stroke-linejoin="round" transform="translate(272.964847, 97.515775) scale(-1, 1) translate(-272.964847, -97.515775)">
+          <use fill="#000" filter="url(#filter-10)" xlink:href="#path-9"/>
+          <use stroke="url(#linearGradient-6)" stroke-width="17.082" xlink:href="#path-9"/>
+        </g>
+        <path id="Path-3" stroke="url(#linearGradient-6)" stroke-width="17.082" d="M64.93 186.436L156.435 8.58" stroke-linejoin="round" transform="translate(110.682494, 97.508174) scale(-1, 1) translate(-110.682494, -97.508174)"/>
+        <g id="Oval-2">
+          <use fill="#111313" xlink:href="#path-11"/>
+          <ellipse cx="161.018" cy="176.611" stroke="url(#linearGradient-6)" stroke-width="14.235" rx="23.488" ry="23.628"/>
+        </g>
+        <g id="Oval-2">
+          <use fill="#111313" xlink:href="#path-12"/>
+          <ellipse cx="20.088" cy="179.472" stroke="url(#linearGradient-6)" stroke-width="17.082" rx="10.676" ry="10.765"/>
+        </g>
+        <g id="Oval-2">
+          <use fill="#111313" xlink:href="#path-13"/>
+          <ellipse cx="311.912" cy="179.472" stroke="url(#linearGradient-6)" stroke-width="17.082" rx="10.676" ry="10.765"/>
+        </g>
+        <rect id="Rectangle-3" width="80" height="24" x="36" fill="url(#linearGradient-14)" rx="12"/>
+      </g>
+    </g>
+  </g>
+</svg>
+    </div>
+  </div>
+
+</div>
+
+<div class="color-option">
+  <input type="radio" id="c1" name="color" value="orange"><label for="c1"></label>
+  <input type="radio" id="c2" name="color" value="green"><label for="c2"></label>
+  <input type="radio" id="c3" name="color" value="pink"><label for="c3"></label>
+  <input type="radio" id="c4" name="color" value="blue"><label for="c4"></label>
+
+  <span id="color-confirm" class="button">Confirm</span>
+</div>
+
+<div class="wheel-option hide">
+  <input type="radio" id="c5" name="wheel" value="0"><label for="c5"></label>
+  <input type="radio" id="c6" name="wheel" value="1"><label for="c6"></label>
+  <input type="radio" id="c7" name="wheel" value="2"><label for="c7"></label>
+  <input type="radio" id="c8" name="wheel" value="3"><label for="c8"></label>
+  <input type="radio" id="c9" name="wheel" value="4"><label for="c9"></label>
+  <input type="radio" id="c10" name="wheel" value="5"><label for="c10"></label>
+
+  <span id="wheel-confirm" class="button">Confirm</span>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
